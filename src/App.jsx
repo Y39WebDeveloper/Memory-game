@@ -8,7 +8,6 @@ function App() {
   return (
     <>
       {screen === "start" && <StartGame />}
-      {screen === "game" && <Game />}
       {(screen === "game" || screen==="gameover" ) && <Game />}
     </>
   );

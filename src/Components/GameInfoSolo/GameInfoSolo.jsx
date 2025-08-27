@@ -5,8 +5,6 @@ import { GameContext } from "../../Context/GameContext";
 function GameInfoSolo() {
   const { moves, time } = useContext(GameContext);
 
-  console.log(moves);
-
   return (
     <div className="game-info-solo">
       <div>
