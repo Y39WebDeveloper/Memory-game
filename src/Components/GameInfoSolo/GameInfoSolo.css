@@ -1,0 +1,49 @@
+.game-info-solo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.game-info-solo>div {
+    flex: 1;
+    background-color: #DFE7EC;
+    border-radius: 5px;
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.game-info-solo>div h6 {
+    font-size: 15px;
+    color: #7191A5;
+}
+
+.game-info-solo>div span {
+    font-size: 24px;
+    color: #304859;
+}
+
+@media (min-width: 576px) {
+    .game-info-solo > div {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 22px;
+        max-width: 255px;
+        height: 72px;
+        border-radius: 10px;
+    }
+
+    .game-info-solo>div h6 {
+        font-size: 18px;
+    }
+
+    .game-info-solo>div span {
+        font-size: 32px;
+    }
+}

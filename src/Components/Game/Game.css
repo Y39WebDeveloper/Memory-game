@@ -1,0 +1,22 @@
+.game {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fcfcfc;
+    color: #304859;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 24px;
+}
+
+@media (min-width:768px) {
+    .game{
+        padding: 39px;
+    }
+}
+@media (min-width:1200px) {
+    .game{
+        padding: 67px;
+    }
+}

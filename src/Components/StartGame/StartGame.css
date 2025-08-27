@@ -1,0 +1,142 @@
+.start-game {
+    width: 100%;
+    height: 100vh;
+    background-color: #152938;
+    color: #FCFCFC;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 48px;
+    padding: 0 24px;
+}
+
+.start-game h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.start-game .container {
+    padding: 24px 26px;
+    background-color: #FCFCFC;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 330px;
+}
+
+.start-game .container .selections {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.start-game .container .selections fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+}
+
+.start-game .container .selections fieldset h6 {
+    font-size: 15px;
+    color: #7191A5;
+}
+
+.start-game .container .selections fieldset .selection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.start-game .container .selections fieldset .selection label {
+    width: 100%;
+}
+
+.start-game .container .selections fieldset .selection label input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.start-game .container .selections fieldset .selection label .input {
+    background-color: #BCCED9;
+    border-radius: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: .3s;
+    cursor: pointer;
+}
+.start-game .container .selections fieldset .selection-theme label .input {
+    font-size: 15px;
+}
+.start-game .container .selections fieldset .selection label input[type="radio"]:focus + .input ,
+.start-game .container .selections fieldset .selection label:hover .input{
+    background-color: #6395B8;
+}
+.start-game .container .selections fieldset .selection label input[type="radio"]:checked + .input {
+    background-color: #304859 !important;
+}
+.start-btn{
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #FDA214;
+    color: #FCFCFC;
+    border-radius: 50px;
+    font-family: inherit;
+    transition: .3s;
+    cursor: pointer;
+    font-weight: inherit;
+}
+.start-btn:hover,
+.start-btn:focus {
+    background-color: #FFB84A;
+}
+
+@media (min-width: 576px) {
+    .start-game {
+        gap: 80px;
+        padding: 0 54px;
+    }
+    .start-game h3{
+        font-size: 40px;
+    }
+    .start-game .container{
+        padding: 57px;
+        gap: 32px;
+        max-width: 654px;
+    }
+    .start-game .container .selections {
+        gap: 32px;
+    }
+    .start-game .container .selections fieldset{
+        gap: 16px;
+    }
+    .start-game .container .selections fieldset h6 {
+        font-size: 20px;
+    }
+    .start-game .container .selections fieldset .selection {
+        gap: 32px;
+    }
+    .start-game .container .selections fieldset .selection-players {
+        gap: 24px;
+    }
+    .start-game .container .selections fieldset .selection label .input{
+        font-size: 26px;
+        height: 52px;
+    }
+    .start-btn{
+        font-size: 32px;
+        padding: 15px 32px;
+    }
+}

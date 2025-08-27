@@ -1,0 +1,133 @@
+.game-over-multi {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #00000080;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.game-over-multi .container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 28px 24px;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    width: 100%;
+    max-width: 330px;
+}
+
+.game-over-multi .head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.game-over-multi .head h4 {
+    color: #152938;
+    font-size: 24px;
+}
+
+.game-over-multi .head p {
+    font-size: 14px;
+    color: #7191A5;
+}
+
+.game-over-multi .result {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.game-over-multi .result .line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 12px 16px;
+    background-color: #DFE7EC;
+    border-radius: 5px;
+}
+
+.game-over-multi .result .line h6 {
+    font-size: 14px;
+    color: #7191A5;
+}
+
+.game-over-multi .result .line span {
+    font-size: 20px;
+    color: #304859;
+}
+.game-over-multi .result .line.active{
+    background-color: #152938;
+}
+.game-over-multi .result .line.active h6,
+.game-over-multi .result .line.active span{
+    color: #FCFCFC;
+}
+.game-over-multi .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.game-over-multi .btns .btn {
+    font-size: 18px;
+    height: 48px;
+}
+
+@media (min-width:768px) {
+    .game-over-multi .container {
+        width: 654px;
+        border-radius: 20px;
+        gap: 40px;
+        padding: 59.5px 55px;
+        max-width: unset;
+    }
+
+    .game-over-multi .head h4 {
+        font-size: 48px;
+    }
+
+    .game-over-multi .head {
+        gap: 16px;
+    }
+
+    .game-over-multi .head p {
+        font-size: 18px;
+    }
+
+    .game-over-multi .result {
+        gap: 16px;
+    }
+
+    .game-over-multi .result .line {
+        border-radius: 10px;
+        padding: 16px 32px;
+    }
+
+    .game-over-multi .result .line h6 {
+        font-size: 18px;
+    }
+
+    .game-over-multi .result .line span {
+        font-size: 32px;
+    }
+    .game-over-multi .btns{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .game-over-multi .btns .btn {
+        font-size: 20px;
+        height: 52px;
+    }
+}
